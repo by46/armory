@@ -13,7 +13,7 @@
 4. 镜像名称建议使用格式GROUP_CLANG_PURPOSE
 	例如：dfis_python_web，就表示该镜像用于部署python开发的web应用。
 	如果你的镜像没有编程语言的限制，那么就可以略去clang参数
-5. 镜像版本使用句号(.)分隔版本号，使用格式MAJOR.MINOR.PATCH，如果你有CI流程，那么你可以追加一位来表示构建版本，1.0.1.build20，来表示第20次构建
+5. 镜像版本使用句号(.)分隔版本号，使用格式MAJOR.MINOR.PATCH, MAJOR 表示主版本， MINOR表示次版本号， PATCH表示补丁编号
 
 ## 镜像描述
 
