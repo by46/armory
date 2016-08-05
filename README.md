@@ -32,7 +32,3 @@
 3. 目录下必须包含cookbook目录，里面存放制作镜像的详细信息，描述文件里MAJOR.MINOR.PATCH.md格式命名，必须包含使用方法，其基础镜像，以及预装软件及版本
 4. 目录下必须包含CHANGELOG.md, 用于记录镜像特性变化
 5. 目录下必须包含TODO.md， 用于记录计划添加的特性
-
-## 可用镜像
-1. dfis_python_web
-2. dfis_python_job
