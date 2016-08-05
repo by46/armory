@@ -8,5 +8,7 @@
 - 镜像由镜像名称和镜像版本唯一标识
 - 镜像名由小写字母，数字，下划线(_)组成
 - 镜像版本由小写字母， 数字，点号(.)组成
-- 镜像名称建议使用格式<group>_<clang>_<purpose>， 
-	例如：dfis_python_web，就表示这个就像是支持使用python开发的web应用
+- 镜像名称建议使用格式GROUP_CLANG_PURPOSE
+	例如：dfis_python_web，就表示这个就像是支持使用python开发的web应用。
+	如果你的镜像没有编程语言的限制，那么就可以略去clang参数
+- 镜像版本使用句号(.)分隔版本号，使用格式MAJOR.MINOR.PATCH
