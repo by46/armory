@@ -1,4 +1,4 @@
-# dfis_celery
+# dfis_redis
 
 该镜像用于celery的redis服务， 镜像已经预装了[supervisor 3.3.0](http://supervisord.org/)
 
@@ -16,5 +16,12 @@
 
 ## Build Image
 ```shell
-sudo docker build -t docker.neg/dfis_celery:0.0.1 .
+sudo docker build -t docker.neg/dfis_redis:0.0.1 .
+```
+
+## Run container
+```shell
+
+sudo docker run --name celery -dt -v /opt/celery:/opt/data -p 6379:6379 docker.neg/dfis_celery:0.0.1
+
 ```
