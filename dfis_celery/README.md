@@ -13,3 +13,8 @@
 7. [celery==3.1.23](http://www.celeryproject.org/)
 8. [Sphinx==1.4.5](http://www.sphinx-doc.org/en/stable/)
 9. git 2.6.6
+
+## Build Image
+```shell
+sudo docker build -t docker.neg/dfis_celery:0.0.1 .
+```
