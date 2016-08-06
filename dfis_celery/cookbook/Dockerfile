@@ -13,8 +13,9 @@ RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple supervisor==3.3.0
 
 RUN mkdir -p /opt/celery/
 
-ADD supervisord.conf /opt/celery/
-ADD redis.conf /opt/celery/
+RUN mkdir -p /opt/data/
+
+ADD supervisord.conf redis.conf  /opt/celery/
 
 WORKDIR /opt/celery/
 
