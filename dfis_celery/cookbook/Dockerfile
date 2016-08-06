@@ -7,7 +7,7 @@ RUN echo https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.3/main > /etc/apk/reposi
 
 
 RUN apk update && \
-	apk add python python-dev py-pip redis=3.0.5-r1
+	apk add python python-dev py-pip redis=3.2.1-r0
 
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple supervisor==3.3.0
 
