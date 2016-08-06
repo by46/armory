@@ -2,11 +2,11 @@ FROM docker.neg/alpine:3.3
 
 MAINTAINER from www.newegg.com by benjamin <benjamin.c.yan@newegg.com>
 
-RUN echo https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.3/main > /etc/apk/repositories &&
+RUN echo https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.3/main > /etc/apk/repositories && \ 
 	echo https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.3/main >> /etc/apk/repositories
 
 
-RUN apk update &&
+RUN apk update && \
 	apk add python python-dev py-pip redis=3.2.0-r0
 
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple supervisor==3.3.0
