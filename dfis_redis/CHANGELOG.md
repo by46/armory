@@ -4,3 +4,4 @@
 
 ### Added
 - init
+- merge /opt/celery and /opt/data volume

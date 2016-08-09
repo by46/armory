@@ -13,3 +13,4 @@
 7. [celery==3.1.23](http://www.celeryproject.org/)
 8. [Sphinx==1.4.5](http://www.sphinx-doc.org/en/stable/)
 9. git 2.6.6
+10. [flower==0.9.1](http://flower.readthedocs.io/en/latest/)

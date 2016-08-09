@@ -22,6 +22,6 @@ sudo docker build -t docker.neg/dfis_redis:0.0.1 .
 ## Run container
 ```shell
 
-sudo docker run --name celery -dt -v /opt/celery:/opt/data -p 6379:6379 docker.neg/dfis_celery:0.0.1
+sudo docker run --name redis -dt -v /opt/celery:/opt/celery -p 6379:6379 docker.neg/dfis_redis:0.0.1
 
 ```
