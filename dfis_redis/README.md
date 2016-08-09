@@ -10,9 +10,6 @@
 4. freetds-dev
 5. pip 7.1.2-r0
 6. [supervisor 3.3.0](http://www.supervisord.org/)
-7. [celery==3.1.23](http://www.celeryproject.org/)
-8. [Sphinx==1.4.5](http://www.sphinx-doc.org/en/stable/)
-9. git 2.6.6
 
 ## Build Image
 ```shell
@@ -22,6 +19,6 @@ sudo docker build -t docker.neg/dfis_redis:0.0.1 .
 ## Run container
 ```shell
 
-sudo docker run --name redis -dt -v /opt/celery:/opt/celery -p 6379:6379 docker.neg/dfis_redis:0.0.1
+sudo docker run --name redis -dt -v /opt/redis:/opt/redis -p 6379:6379 docker.neg/dfis_redis:0.0.1
 
 ```
