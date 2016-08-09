@@ -11,13 +11,13 @@ RUN apk update && \
 
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple supervisor==3.3.0
 
-RUN mkdir -p /opt/redis/
+RUN mkdir -p /etc/dfis_redis/
 
-ADD supervisord.conf redis.conf  /opt/redis/
+ADD supervisord.conf redis.conf  /etc/dfis_redis/
 
 WORKDIR /opt/redis/
 
-VOLUME ["/opt/celery"]
+VOLUME ["/opt/redis"]
 
-CMD ["supervisord", "--configuration", "/opt/redis/supervisord.conf"]
+CMD ["supervisord", "--configuration", "/etc/dfis_redis/supervisord.conf"]
 
