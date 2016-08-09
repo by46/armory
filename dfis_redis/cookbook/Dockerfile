@@ -11,13 +11,13 @@ RUN apk update && \
 
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple supervisor==3.3.0
 
-RUN mkdir -p /opt/celery/
+RUN mkdir -p /opt/redis/
 
-ADD supervisord.conf redis.conf  /opt/celery/
+ADD supervisord.conf redis.conf  /opt/redis/
 
-WORKDIR /opt/celery/
+WORKDIR /opt/redis/
 
 VOLUME ["/opt/celery"]
 
-CMD ["supervisord", "--configuration", "/opt/celery/supervisord.conf"]
+CMD ["supervisord", "--configuration", "/opt/redis/supervisord.conf"]
 

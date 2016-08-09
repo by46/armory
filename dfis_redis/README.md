@@ -14,11 +14,13 @@
 ## Build Image
 ```shell
 sudo docker build -t docker.neg/dfis_redis:0.0.1 .
+sudo docker push docker.neg/dfis_redis:0.0.1
+
 ```
 
 ## Run container
 ```shell
-
+sudo docker pull docker.neg/dfis_redis:0.0.1
 sudo docker run --name redis -dt -v /opt/redis:/opt/redis -p 6379:6379 docker.neg/dfis_redis:0.0.1
 
 ```
