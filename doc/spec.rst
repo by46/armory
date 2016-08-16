@@ -3,6 +3,8 @@ DFIS Docker Image Specialization
 
 该文档描述了如何描述基础镜像的详细信息，并且我们建议使用export & import的方式来构建基础镜像。
 
+注意：所有描述信息均使用Markdown语法书写
+
 镜像命名
 ---------------------------------------
 
