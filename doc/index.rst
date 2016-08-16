@@ -1,41 +1,19 @@
-.. simplekit documentation master file, created by
+.. Armory documentation master file, created by
    sphinx-quickstart on Thu Nov 19 22:49:03 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Simple Kit
+Welcome to Armory's Document
 ========================
 
-The SimpleKit is a collection of utility function for Python, include some mostly useful
-function. Python provide some useful packages and modules, but some of those is too
-complicated to used. for example,  the package :mod:`json` is used to serialize and deserialize
-json object. The :func:`json.loads` function return dict object which represent the json object, I
-think the ``[key]`` operator, especially the json object contains hierarchical project.
-So, SimpleKit provides some simple and brief way which operate the object object.
+该项目用于记录、跟踪、维护DFIS常用的一些Docker基础镜像。使得我们所有使用的基础镜像都是可维护的。
 
-it's debugging
-it's debugging
-
-User's Guide
-==============
-
-This part of document is introduce what's is SimpleKit and who to use it.
 
 .. toctree::
    :maxdepth: 2
 
-   install
-   objson
-   config
-   api
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   spec
+   redis
+   supervisor
+   web
 

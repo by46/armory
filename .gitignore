@@ -6,3 +6,5 @@
 .idea
 *.iml
 *.pyc
+
+/doc/_build
